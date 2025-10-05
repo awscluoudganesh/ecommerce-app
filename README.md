@@ -20,7 +20,7 @@ cd ecommerce-app
 cd backend
 mvn clean package -DskipTests
 java -jar target/*.jar
-# or with Docker
+## or with Docker
 docker build -t ecommerce-backend:local .
 docker run -p 8080:8080 ecommerce-backend:local
 
@@ -28,15 +28,15 @@ docker run -p 8080:8080 ecommerce-backend:local
 cd frontend
 npm install
 npm run dev
-# open http://localhost:5173
+## open http://localhost:5173
 
 # 4. Run full stack with Docker Compose
 
 From repo root:
 
 docker compose up --build
-# Frontend -> http://localhost:3000
-# Backend API -> http://localhost:8080/api (health at /health)
+## Frontend -> http://localhost:3000
+## Backend API -> http://localhost:8080/api (health at /health)
 
 Notes :
 
@@ -45,9 +45,7 @@ This chapter provides skeletons only (health endpoint). We'll implement user aut
 Use this branch as chapter-1 in git and open PR when ready to move on.
 
 
----
-
-# 6 — PowerShell commands to create files & run (copy/paste)
+# 5. PowerShell commands to create files & run (copy/paste)
 
 Run these in **PowerShell** from an empty folder where you want `ecommerce-app`:
 
